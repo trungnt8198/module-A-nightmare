@@ -1,0 +1,100 @@
+#testimonials {
+    margin-top: 10.8rem;
+}
+
+#testimonials .intro {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.testimonials {
+    gap: 3rem;
+    margin-top: 7.4rem;
+    width: 144rem;
+}
+
+.testimonial {
+    padding: 2.4rem 3rem;
+    border: 0.15rem solid #313239;
+    border-radius: 1.2rem;
+    text-align: left;
+    position: relative;
+}
+
+.testimonial::before {
+    content: "";
+    background-image: url("/assets/images/quote-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 6.7676rem;
+    height: 3.7rem;
+    position: absolute;
+    right: 4.066rem;
+    top: -1.5rem;
+    
+}
+
+.testimonial--active {
+    background-color: $gray;
+}
+
+.testimonial > .author__image {
+    width: 8.6rem;
+    border-radius: 50%;
+}
+
+.author__quote {
+    height: 9rem;
+    width: 41.8rem;
+    color: #696B76;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 3rem;
+}
+
+.author__name {
+    display: block;
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.036rem;
+}
+
+.author__company {
+    display: block;
+    margin-top: 0.4rem;
+    color: #696B76;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.testimonials__control-group {
+    margin-top: 5rem;
+
+    .dots {
+        gap: 1.5rem;
+    }
+
+    .dots > .dot {
+        background-color: #3C3E4A;
+        width: 0.9rem;
+        height: 0.9rem;
+        border-radius: 50%;
+    }
+
+    .dots > .dot-active {
+        background-color: #65697A;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+    }
+
+    .control {
+        gap: 6.6rem;
+    }
+}

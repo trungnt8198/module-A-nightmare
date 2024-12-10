@@ -1,0 +1,115 @@
+#our-pricing-plan {
+    margin-top: 10.8rem;
+}
+
+#our-pricing-plan >.intro {
+    margin-top: 1.6rem;
+    font-size:  1.6rem;
+    line-height: 2.4rem;
+}
+
+#our-pricing-plan .pricing-plans {
+    margin-top: 7.2rem;
+}
+
+.pricing-plans {
+    gap: 2.5rem;
+    font-family: $secondaryFont;
+    flex-wrap: wrap;
+}
+
+.pricing-plans .plan {
+    padding: 5rem 4rem 4rem 4rem;
+    background-color: $gray;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+
+.plan .plan__name {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.plan__info {
+    margin-top: 2.4rem;
+    text-align: left;
+}
+
+.plan__info > .plan__price {
+    color: #FFF;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.plan__info > .trial-duration {
+    color: #8C8F93;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-left: 0.6rem;
+}
+
+.plan__benefit {
+    margin-top: 4.2rem;
+    color: #606266;
+}
+
+.plan__benefit > li {
+    color: #606266;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.018rem;
+    margin-bottom: 1.6rem;
+}
+
+.plan__benefit > li::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1.6rem;
+    height: 1.25rem;
+    margin-right: 1.2rem;
+}
+.plan> .plan__btn {
+    margin-top: 2.4rem;
+    padding: 1.4rem 3rem;
+    font-family: "DM Sans", serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.015rem;
+}
+
+.plan-free { 
+    .plan__benefit > li::before {
+        background-image: url('/assets/images/check-icon.svg');
+    }
+
+    .plan__btn {
+        background-color: $free;
+    }
+}
+
+.plan-basic { 
+    .plan__benefit > li::before {
+        background-image: url('/assets/images/check-icon-basic.svg');
+    }
+
+    .plan__btn { 
+        background-color: $basic;
+    }
+}
+
+.plan-premium {
+    .plan__benefit > li::before {
+        background-image: url('/assets/images/check-icon-premium.svg');
+    }
+
+    .plan__btn { 
+        background-color: $premium;
+    }
+}

@@ -1,0 +1,86 @@
+.header__inner {
+    height: 8rem;
+    max-width: 100%;
+}
+
+.logo-group__logo {
+    font-family: $primaryFont;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.02em;
+    color: $title-color;
+    cursor: pointer;
+}
+
+.logo-group__night-mode {
+    margin-left: 0.8rem;
+    width: 40px;
+    height: 22px;
+    background-color: #2A2B33;
+    border-radius: 1.1rem;
+    cursor: pointer;
+}
+
+.night-mode__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: $title-color;
+    position: relative;
+    left: 50%;
+}
+
+.night-mode__icon::after {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url(/assets/images/night-mode-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+}
+
+.header__nav {
+    margin-left: 8rem;
+    margin-right: auto;
+}
+
+.nav__link,
+.nav__link > a {
+    display: inline-block
+}
+
+.header__nav__links {
+    gap: 3.4rem;
+}
+
+.nav__link > a {
+    color: $title-color;
+    font-family: $primaryFont;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.link--active > a{
+    opacity: 1;
+}
+
+.login-group__btn {
+    padding: 1rem 1.6rem;
+    background-color: #fff;
+    color: #12141D;
+}
+
+.login-group__btn:first-child {
+    background-color: #1D1F29;
+    color: #FFF;
+    margin-right: 1.8rem;
+}

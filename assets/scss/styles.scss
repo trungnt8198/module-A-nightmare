@@ -1,0 +1,26 @@
+@import './base/reset';
+@import './base/responsive';
+@import './utils/variables';
+@import './utils/common';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/key-feature';
+@import './layout/what-we-do';
+@import './layout/how-it-works';
+@import './layout/our-pricing-plan';
+@import './layout/testimonials';
+@import './layout/frequently-asked-questions';
+@import './layout/footer';
+
+body {
+    background-color: $dark;
+}
+
+.container {
+    background-color: $dark;
+    padding: 0 13.5rem;
+    max-width: 144rem;
+    width: 100%;
+    font-family: $primaryFont;
+    overflow: hidden;
+}

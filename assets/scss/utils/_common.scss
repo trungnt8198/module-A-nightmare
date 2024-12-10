@@ -1,0 +1,68 @@
+.flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center; 
+    border-radius: 0.8rem;
+    color: $title-color;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: $primaryFont;
+    font-weight: 600;
+    letter-spacing: -0.014rem;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+}
+
+.title {
+    color: #FFF;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 4.6rem;
+    letter-spacing: -0.084rem;
+}
+
+.intro {
+    color: #808188;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: -0.036rem;
+}
+
+.btn--large {
+    padding: 1.4rem 3rem;;
+}
+
+.btn-with-arrow {
+    background-color: #FF664F;
+}
+
+.arrow-icon::after {
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url('/assets/images/arrow-icon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.8rem;
+}

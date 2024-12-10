@@ -1,0 +1,41 @@
+#hero {
+    margin-top: 6rem;
+}
+
+.hero__title {
+    letter-spacing: -0.105rem;
+}
+
+.hero__intro {
+    margin-top: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.04rem;
+}
+
+.hero__btn-group {
+    margin-top: 2rem;
+}
+
+.hero__btn {
+    padding: 1.4rem 3rem;
+    background-color: #22222B;
+    margin-left: 1.6rem;
+}
+
+.hero__btn:first-child {
+    background-color: #FF664F;
+}
+
+.hero__btn__arrow-icon::after {
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url('/assets/images/arrow-icon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.8rem;
+}
+
+
