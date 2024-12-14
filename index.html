@@ -1,402 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketing Website</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="header__inner flex align-item-center">
+        <div class="header__logo-group flex align-item-center">
+          <a href="#" class="logo-group__logo">Nettracking</a>
+          <div class="logo-group__night-mode flex align-item-center">
+            <span class="night-mode__icon"></span>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav__links flex align-item-center">
+            <li class="nav__link link--active">
+              <a href="#key-features">Features</a>
+            </li>
+            <li class="nav__link"><a href="#our-pricing-plan">Pricing</a></li>
+            <li class="nav__link"><a href="#how-it-works">How it works</a></li>
+            <li class="nav__link"><a href="#knowledge-base">Knowledge base</a></li>
+            <li class="nav__link"><a href="#frequently-asked-question">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header__login-group">
+          <a href="#" class="btn login-group__btn">Sign in</a>
+          <a href="#" class="btn login-group__btn">Sign up</a>
+        </div>
+
+        <input
+          type="checkbox"
+          class="nav__toggle__checkbox"
+          id="nav__toggle__checkbox"
+        />
+
+        <nav class="mobile-nav">
+          <ul class="header__nav__links">
+            <li class="nav__link link--active">
+              <a href="#key-features">Features</a>
+            </li>
+            <li class="nav__link"><a href="#our-pricing-plan">Pricing</a></li>
+            <li class="nav__link"><a href="#how-it-works">How it works</a></li>
+            <li class="nav__link"><a href="#knowledge-base">Knowledge base</a></li>
+            <li class="nav__link"><a href="#frequently-asked-question">FAQ</a></li>
+          </ul>
+          <a href="#" class="btn login-group__btn">Sign in</a>
+          <a href="#" class="btn login-group__btn">Sign up</a>
+        </nav>
+
+        <label for="nav__toggle__checkbox" class="nav__toggle">
+          <img src="assets/images/burger-button.svg" alt="burger button icon" />
+        </label>
+      </div>
+    </header>
     <div class="container">
-        <header>
-            <div class="header__inner flex align-item-center">
-                <div class="header__logo-group flex align-item-center">
-                    <a href="#" class="logo-group__logo">Nettracking</a>
-                    <div class="logo-group__night-mode flex align-item-center">
-                        <span class="night-mode__icon"></span>
-                    </div>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__nav__links flex align-item-center">
-                    <li class="nav__link link--active"><a href="#">Features</a></li>
-                    <li class="nav__link"><a href="pricing.html">Pricing</a></li>
-                    <li class="nav__link"><a href="how-it-works.html">How it works</a></li>
-                    <li class="nav__link"><a href="knowledge-base.html">Knowledge base</a></li>
-                    <li class="nav__link"><a href="faq.html">FAQ</a></li> 
-                    </ul>
-                </nav>
-                <div class="header__login-group">
-                    <a href="#" class="btn login-group__btn">Sign in</a>
-                    <a href="#" class="btn login-group__btn">Sign up</a>
-                </div>
+      <>
+        <section id="hero">
+          <h1 class="title hero__title">
+            Content marketing solution & idea of your business
+          </h1>
+          <p class="intro hero__intro">
+            Nettracking is a content marketing solution that<br />
+            tracks the effectiveness of your blog,
+          </p>
+          <div class="hero__btn-group">
+            <a href="#" class="btn btn--large btn-with-arrow">
+              Explore Platform
+              <span class="arrow-icon"></span>
+            </a>
+            <a href="#" class="btn btn hero__btn">Learn More</a>
+          </div>
+        </section>
+        <section id="key-features">
+          <h2 class="title key-features__title">Key features</h2>
+          <p class="intro key-features__intro">
+            NetTracking™ has quickly become the go-to content marketing<br />
+            solution for over 600 clients around the world
+          </p>
+          <ul class="key-features__list-features">
+            <li data-aos="fade-down-right" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-1.svg"
+                  alt="Real-Time Email Alerts feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Real-Time Email Alerts</h3>
+              <p class="feature__detail">
+                NetTracking" is a very powerful<br />
+                Web 2.0 site search engine allows<br />
+                you to find email allerts
+              </p>
+            </li>
+            <li data-aos="fade-down" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-2.svg"
+                  alt="Monitor Inbound Traffic feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Monitor Inbound Traffic</h3>
+              <p class="feature__detail">
+                The biggest challenge for<br />
+                marketers is being heard inbound<br />
+                traffice in market.
+              </p>
+            </li>
+            <li data-aos="fade-down-left" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-3.svg"
+                  alt="Track Multiple Sites feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Track Multiple Sites</h3>
+              <p class="feature__detail">
+                Nettracking gives you an<br />
+                web-based tool that<br />
+                manages multiple sites
+              </p>
+            </li>
+            <li data-aos="fade-up-right" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-4.svg"
+                  alt="Aggregate Statistics feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Aggregate Statistics</h3>
+              <p class="feature__detail">
+                filters and reports on your<br />
+                website's search engine ranking<br />
+                results.
+              </p>
+            </li>
+            <li data-aos="fade-up" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-5.svg"
+                  alt="Edit Exclude feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Edit Exclude</h3>
+              <p class="feature__detail">
+                In short, nettracking gives you the<br />
+                information that allows you to<br />
+                changes in your website's ranking
+              </p>
+            </li>
+            <li data-aos="fade-up-left" class="feature">
+              <div class="feature__icon-container">
+                <img
+                  class="feature__icon"
+                  src="assets/images/key-feature-1.svg"
+                  alt="Easy To Implement feature icon"
+                />
+              </div>
+              <h3 class="feature__name">Easy To Implement</h3>
+              <p class="feature__detail">
+                accurately track organic (or<br />
+                natural) search engine movement<br />
+                over time.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section id="what-we-do">
+          <h2 class="title">
+            Creative solutions to expand<br />
+            your business!
+          </h2>
+          <p class="intro">
+            Nettracking is designed with an integrated tracking system that
+            allows customers to track their package
+          </p>
+          <div class="what-we-do__cards flex justify-space-between">
+            <div class="card__left">
+              <nav class="jobs-nav">
+                <ul class="jobs-list flex align-item-center">
+                  <li class="job job--active"><a href="#">Founder</a></li>
+                  <li class="job"><a href="#">Blogger</a></li>
+                  <li class="job"><a href="#">Marketer</a></li>
+                  <li class="job"><a href="#">Agency</a></li>
+                </ul>
+              </nav>
+              <h3 class="title">
+                Track the results of<br />
+                your work
+              </h3>
+              <p class="intro">
+                The tracking system sends customers notifications<br />
+                on shipping date status, shipping notification,<br />
+                delivery confirmation, package delivered with time<br />
+                and date, etc.
+              </p>
+              <a href="#" class="btn btn--large btn-with-arrow">
+                Explore Platform
+                <span class="arrow-icon"></span>
+              </a>
             </div>
-        </header>
-        <main>
-            <section id="hero">
-                <h1 class="title hero__title">Content marketing solution &<br>
-                    idea of your business</h1>
-                <p class="intro hero__intro">
-                    Nettracking is a content marketing solution that<br>
-                    tracks the effectiveness of your blog,
-                </p>
-                <div class="hero__btn-group">
-                    <a href="#" class="btn btn--large btn-with-arrow">
-                        Explore Platform
-                        <span class="arrow-icon"></span>
-                    </a>
-                    <a href="#" class="btn btn hero__btn">Learn More</a>
-                </div>
-            </section>
-            <section id="key-features">
-                <h2 class="title key-features__title">Key features</h2>
-                <p class="intro key-features__intro">
-                    NetTracking™ has quickly become the go-to content marketing<br>
-                    solution for over 600 clients around the world
-                </p>
-                <ul class="key-features__list-features">
-                    <li data-aos="fade-down-right" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-1.svg" alt="Real-Time Email Alerts feature icon">
-                        </div>
-                        <h3 class="feature__name">Real-Time Email Alerts</h3>
-                        <p class="feature__detail">
-                            NetTracking" is a very powerful<br>
-                            Web 2.0 site search engine allows<br>
-                            you to find  email allerts
-                        </p>
-                    </li>
-                    <li data-aos="fade-down" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-2.svg" alt="Monitor Inbound Traffic feature icon">
-                        </div>
-                        <h3 class="feature__name">Monitor Inbound Traffic</h3>
-                        <p class="feature__detail">
-                            The biggest challenge for<br>
-                            marketers is being heard inbound<br>
-                            traffice in market.
-                        </p>
-                    </li>
-                    <li data-aos="fade-down-left" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-3.svg" alt="Track Multiple Sites feature icon">
-                        </div>
-                        <h3 class="feature__name">Track Multiple Sites</h3>
-                        <p class="feature__detail">
-                            Nettracking gives you an<br>
-                            web-based tool that<br>
-                            manages multiple sites
-                        </p>
-                    </li>
-                    <li data-aos="fade-up-right" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-4.svg" alt="Aggregate Statistics feature icon">
-                        </div>
-                        <h3 class="feature__name">Aggregate Statistics</h3>
-                        <p class="feature__detail">
-                            filters and reports on your<br>
-                            website's search engine ranking<br>
-                            results.
-                        </p>
-                    </li>
-                    <li data-aos="fade-up" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-5.svg" alt="Edit Exclude feature icon">
-                        </div>
-                        <h3 class="feature__name">Edit Exclude</h3>
-                        <p class="feature__detail">
-                            In short, nettracking gives you the<br>
-                            information that allows you to<br>
-                            changes in your website's ranking 
-                        </p>
-                    </li>
-                    <li data-aos="fade-up-left" class="feature">
-                        <div class="feature__icon-container">
-                            <img class="feature__icon" src="assets/images/key-feature-1.svg" alt="Easy To Implement feature icon">
-                        </div>
-                        <h3 class="feature__name">Easy To Implement</h3>
-                        <p class="feature__detail">
-                            accurately track organic (or<br>
-                            natural) search engine movement<br>
-                            over time.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="what-we-do">
-                <h2 class="title">
-                    Creative solutions to expand<br>
-                    your business!
-                </h2>
+            <img
+              class="card__right"
+              src="/assets/images/creative-solution.svg"
+              alt="Creative solution image"
+            />
+          </div>
+        </section>
+        <section id="how-it-works">
+          <h2 class="title">How it works</h2>
+          <ul class="steps">
+            <div class="step__numbers flex">
+              <span class="step__number">01</span>
+              <span class="step__number">02</span>
+              <span class="step__number">03</span>
+            </div>
+            <li class="step flex">
+              <div
+                class="flex align-item-center justify-center step__image-container"
+              >
+                <img
+                  src="assets/images/add-website.svg"
+                  alt="Add website image"
+                />
+              </div>
+              <div class="step-info">
+                <h3 class="title">Add Website</h3>
                 <p class="intro">
-                    Nettracking is designed with an integrated tracking system that<br>
-                    allows customers to track their package
+                  Nettracking gives you an innovative<br />
+                  web-based tool that manages, filters<br />
+                  and reports on your website's
                 </p>
-                <div class="what-we-do__cards flex justify-space-between">
-                    <div class="card__left">
-                        <nav class="jobs-nav">
-                            <ul class="jobs-list flex align-item-center">
-                                <li class="job job--active"><a href="#">Founder</a></li>
-                                <li class="job"><a href="#">Blogger</a></li>    
-                                <li class="job"><a href="#">Marketer</a></li>    
-                                <li class="job"><a href="#">Agency</a></li>        
-                            </ul>
-                        </nav>
-                        <h3 class="title">
-                            Track the results of<br>
-                            your work
-                        </h3>
-                        <p class="intro">
-                            The tracking system sends customers notifications<br>
-                            on shipping date status, shipping notification,<br>
-                            delivery confirmation, package delivered with time<br>
-                            and date, etc.
-                        </p>
-                        <a href="#" class="btn btn--large btn-with-arrow">
-                            Explore Platform
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </div>
-                    <img class="card__right" src="/assets/images/creative-solution.svg" alt="Creative solution image">
+              </div>
+            </li>
+            <li class="step flex">
+              <div
+                class="flex align-item-center justify-center step__image-container"
+              >
+                <img
+                  src="assets/images/get-tracking-code.svg"
+                  alt="Get tracking code image"
+                />
+              </div>
+              <div class="step-info">
+                <h3 class="title">Get Tracking Code</h3>
+                <p class="intro">
+                  filters and reports on your website's<br />
+                  search engine ranking results. In short,<br />
+                  nettracking gives you the information
+                </p>
+              </div>
+            </li>
+            <li class="step flex">
+              <div
+                class="flex align-item-center justify-center step__image-container"
+              >
+                <img
+                  src="assets/images/start-tracking.svg"
+                  alt="Add website image"
+                />
+              </div>
+              <div class="step-info">
+                <h3 class="title">Start Tracking</h3>
+                <p class="intro">
+                  in your website's ranking position and<br />
+                  accurately track organic (or natural)<br />
+                  search engine movement over time.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <h2 class="title growing-business__title">
+            Need Help Growing Your Business?
+          </h2>
+          <p class="intro">
+            Take a look at our Nettracking Blog for tips & tricks on how to Grow
+            Your Business.
+          </p>
+          <ul class="guides-list">
+            <li>
+              <a href="#">
+                <div class="guide__image-container">
+                  <img src="assets/images/guide-1.svg" alt="Guide 1 icon" />
                 </div>
-            </section>
-            <section id="how-it-works">
-                <h2 class="title">How it works</h2>
-                <ul class="steps">
-                    <li class="step flex">
-                        <div class="flex align-item-center justify-center step__image-container">
-                            <img src="assets/images/add-website.svg" alt="Add website image">
-                        </div>
-                        <div class="step-info">
-                            <span class="step__number">01</span>
-                            <h3 class="title">Add Website</h3>
-                            <p class="intro">
-                                Nettracking gives you an innovative<br>
-                                web-based tool that manages, filters<br>
-                                and reports on your website's
-                            </p>
-                        </div>
-                    </li>
-                    <li class="step flex">
-                        <div class="flex align-item-center justify-center step__image-container">
-                            <img src="assets/images/get-tracking-code.svg" alt="Get tracking code image">
-                        </div>
-                        <div class="step-info">
-                            <span class="step__number">02</span>
-                            <h3 class="title">Get Tracking Code</h3>
-                            <p class="intro">
-                                filters and reports on your website's<br>
-                                search engine ranking results. In short,<br>
-                                nettracking gives you the information
-                            </p>
-                        </div>
-                    </li>
-                    <li class="step flex">
-                        <div class="flex align-item-center justify-center step__image-container">
-                            <img src="assets/images/start-tracking.svg" alt="Add website image">
-                        </div>
-                        <div class="step-info">
-                            <span class="step__number">03</span>
-                            <h3 class="title">Start Tracking</h3>
-                            <p class="intro">
-                                in your website's ranking position and<br>
-                                accurately track organic (or natural)<br>
-                                search engine movement over time.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section id="our-pricing-plan">
-                <h2 class="title">Our pricing plan</h2>
-                <p class="intro">online sales tracker that tracks the success of your online sales efforts.</p>
-                <ul class="pricing-plans flex justify-center">
-                    <li class="plan plan-free">
-                        <h3 class="plan__name">Free</h3>
-                        <div class="plan__info">
-                            <strong class="plan__price">$00</strong>
-                            <span class="trial-duration">3 month trial</span>
-                        </div>
-                        <ul class="plan__benefit">
-                            <li>B2B marketing</li>
-                            <li>Cloud-based solution</li>
-                            <li>Marketing strategies</li>
-                            <li>Automated follow up</li>
-                        </ul>
-                        <a class="btn plan__btn" href="#">Start free trial</a>
-                    </li>
-                    <li class="plan plan-basic">
-                        <h3 class="plan__name">Basic</h3>
-                        <div class="plan__info">
-                            <strong class="plan__price">$29</strong>
-                            <span class="trial-duration">3 month trial</span>
-                        </div>
-                        <ul class="plan__benefit">
-                            <li>B2B marketing</li>
-                            <li>Cloud-based solution</li>
-                            <li>Marketing strategies</li>
-                            <li>Automated follow up</li>
-                        </ul>
-                        <a class="btn plan__btn" href="#">Start free trial</a>
-                    </li>
-                    <li class="plan plan-premium">
-                        <h3 class="plan__name">Premium</h3>
-                        <div class="plan__info">
-                            <strong class="plan__price">$99</strong>
-                            <span class="trial-duration">3 month trial</span>
-                        </div>
-                        <ul class="plan__benefit">
-                            <li>B2B marketing</li>
-                            <li>Cloud-based solution</li>
-                            <li>Marketing strategies</li>
-                            <li>Automated follow up</li>
-                        </ul>
-                        <a class="btn plan__btn" href="#">Start free trial</a>
-                    </li>
-                </ul>
-            </section>
-            <section id="testimonials">
-                <h2 class="title">Testimonials</h2>
-                <p class="intro">Nettracking is a B2B marketing software for telecommunications industry.</p>
-                <ul class="testimonials flex">
-                    <li class="testimonial testimonial--active">
-                        <img class="author__image" src="assets/images/john-smith.png" alt="Author image">
-                        <blockquote class="author__quote">
-                            Nettracking is a B2B marketing software for
-                            telecommunications industry. This realtime cloud-
-                            based solution tracks your leads and works on many
-                        </blockquote>
-                        <span class="author__name">John Smith</span>
-                        <span class="author__company">UIHUT Company</span>
-                    </li>
-                    <li class="testimonial">
-                        <img class="author__image" src="assets/images/mansur.png" alt="Author image">
-                        <blockquote class="author__quote">
-                            Customer feedback from the system is help for
-                            refining customer segmentation as well as positioning
-                            of brands. Need to see your leads as the real people
-                        </blockquote>
-                        <span class="author__name">Mansur</span>
-                        <span class="author__company">UIHUT Company</span>
-                    </li>
-                    <li class="testimonial">
-                        <img class="author__image" src="assets/images/sajib-smith.png" alt="Author image">
-                        <blockquote class="author__quote">
-                            Nettracking was founded in 1995 to assist companies
-                            with improving their internet marketing performance.
-                            Our team of award-winning internet 
-                        </blockquote>
-                        <span class="author__name">Sajib Smith</span>
-                        <span class="author__company">UIHUT Company</span>
-                    </li>
-                </ul>
-                <div class="testimonials__control-group flex justify-space-between align-item-center">
-                    <ul class="dots flex align-item-center">
-                        <li class="dot dot-active"></li>
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                    </ul>
-                    <div class="control flex justify-space-between">
-                        <img src="assets/images/arrow-left.svg" alt="arrow-icon">
-                        <img src="assets/images/arrow-right.svg" alt="arrow-icon">
-                    </div>
+                <p>FOMO Popups on WordPress: Step-by-Step Setup Guide</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="guide__image-container">
+                  <img src="assets/images/guide-2.svg" alt="Guide 2 icon" />
                 </div>
-            </section>
-            <section id="frequently-asked-question">
-                <h2 class="title">FAQ</h2>
-                <h3 class="intro">Measure marketing and PR effectiveness. Find out which </h3>
-                <ul class="faq__list">
-                    <li class="question flex">
-                        <span class="question__number">01</span>
-                        <div class="question__info">
-                            <h3 class="question__title">What is nettracking</h3>
-                            <p class="question__answer">
-                                "NetTracking" is a very powerful Web 2.0 site search engine allows you to find
-                            </p>
-                        </div>
-                    </li>
-                    <li class="question flex">
-                        <span class="question__number">02</span>
-                        <div class="question__info">
-                            <h3 class="question__title">Pacage tracking available?</h3>
-                            <p class="question__answer">
-                                Nettracking is designed with an integrated tracking system that allows customers<br>
-                                to track their package
-                            </p>
-                        </div>
-                    </li>
-                    <li class="question flex">
-                        <span class="question__number">03</span>
-                        <div class="question__info">
-                            <h3 class="question__title">What is the best solution in this platform</h3>
-                            <p class="question__answer">
-                                Nettracking is a content marketing solution that tracks the effectiveness of your blog,<br>
-                                social network,
-                            </p>
-                        </div>
-                    </li>
-                    <li class="question flex">
-                        <span class="question__number">04</span>
-                        <div class="question__info">
-                            <h3 class="question__title">Marketing friendly?</h3>
-                            <p class="question__answer">
-                                video and email marketing efforts. By converting your customers into tracking 
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <ul class="footer__cols flex">
-                <li class="footer__col social__col">
-                    <a href="#" class="footer__logo">Nettracking</a>
-                    <p>We saw our customers<br>
-                        confusing us with some of the<br>
-                        other companies intheindustry
+                <p>6 Best Poll Plugins for WordPress (+ BONUS Pick)</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="guide__image-container">
+                  <img src="assets/images/guide-3.svg" alt="Guide 3 icon" />
+                </div>
+                <p>All in One SEO Review: The Best SEO Plugin for WordPress?</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="guide__image-container">
+                  <img src="assets/images/guide-4.svg" alt="Guide 4 icon" />
+                </div>
+                <p>
+                  How to Track Shopping Cart Abandonment with Google Analytics
+                </p>
+              </a>
+            </li>
+          </ul>
+          <div class="testimonials__control-group flex justify-space-between align-item-center">
+            <ul class="dots flex align-item-center">
+              <li class="dot dot-active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+            <div class="control flex justify-space-between">
+              <img src="assets/images/arrow-left.svg" alt="arrow-icon">
+              <img src="assets/images/arrow-right.svg" alt="arrow-icon">
+            </div>
+          </div>
+        </section>
+        <section id="our-pricing-plan">
+          <h2 class="title">Our pricing plan</h2>
+          <p class="intro">
+            online sales tracker that tracks the success of your online sales
+            efforts.
+          </p>
+          <ul class="pricing-plans flex justify-center">
+            <li class="plan plan-free">
+              <h3 class="plan__name">Free</h3>
+              <div class="plan__info">
+                <strong class="plan__price">$00</strong>
+                <span class="trial-duration">3 month trial</span>
+              </div>
+              <ul class="plan__benefit">
+                <li>B2B marketing</li>
+                <li>Cloud-based solution</li>
+                <li>Marketing strategies</li>
+                <li>Automated follow up</li>
+              </ul>
+              <a class="btn plan__btn" href="#">Start free trial</a>
+            </li>
+            <li class="plan plan-basic">
+              <h3 class="plan__name">Basic</h3>
+              <div class="plan__info">
+                <strong class="plan__price">$29</strong>
+                <span class="trial-duration">3 month trial</span>
+              </div>
+              <ul class="plan__benefit">
+                <li>B2B marketing</li>
+                <li>Cloud-based solution</li>
+                <li>Marketing strategies</li>
+                <li>Automated follow up</li>
+              </ul>
+              <a class="btn plan__btn" href="#">Start free trial</a>
+            </li>
+            <li class="plan plan-premium">
+              <h3 class="plan__name">Premium</h3>
+              <div class="plan__info">
+                <strong class="plan__price">$99</strong>
+                <span class="trial-duration">3 month trial</span>
+              </div>
+              <ul class="plan__benefit">
+                <li>B2B marketing</li>
+                <li>Cloud-based solution</li>
+                <li>Marketing strategies</li>
+                <li>Automated follow up</li>
+              </ul>
+              <a class="btn plan__btn" href="#">Start free trial</a>
+            </li>
+          </ul>
+
+          <h2 class="title trusted-companies__title">Trusted and Loved by</h2>
+          <ul
+            class="trusted-companies flex justify-space-between align-item-center"
+          >
+            <li>
+              <a href="#"
+                ><img src="assets/images/trustpay.svg" alt="TrustPay icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/rakuten.svg" alt="Rakuten icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/walmart.svg" alt="Walmart icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/ogilvy.svg" alt="Ogilvy icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/google.svg" alt="Google icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section id="testimonials">
+          <h2 class="title">Testimonials</h2>
+          <p class="intro">
+            Nettracking is a B2B marketing software for telecommunications
+            industry.
+          </p>
+          <ul class="testimonials flex">
+            <li class="testimonial testimonial--active">
+              <img
+                class="author__image"
+                src="assets/images/john-smith.png"
+                alt="Author image"
+              />
+              <blockquote class="author__quote">
+                Nettracking is a B2B marketing software for<br />
+                telecommunications industry. This realtime cloud-<br />
+                based solution tracks your leads and works on many
+              </blockquote>
+              <span class="author__name">John Smith</span>
+              <span class="author__company">UIHUT Company</span>
+            </li>
+            <li class="testimonial">
+              <img
+                class="author__image"
+                src="assets/images/mansur.png"
+                alt="Author image"
+              />
+              <blockquote class="author__quote">
+                Customer feedback from the system is help for<br />
+                refining customer segmentation as well as positioning<br />
+                of brands. Need to see your leads as the real people
+              </blockquote>
+              <span class="author__name">Mansur</span>
+              <span class="author__company">UIHUT Company</span>
+            </li>
+            <li class="testimonial">
+              <img
+                class="author__image"
+                src="assets/images/sajib-smith.png"
+                alt="Author image"
+              />
+              <blockquote class="author__quote">
+                Nettracking was founded in 1995 to assist companies<br />
+                with improving their internet marketing performance.<br />
+                Our team of award-winning internet
+              </blockquote>
+              <span class="author__name">Sajib Smith</span>
+              <span class="author__company">UIHUT Company</span>
+            </li>
+          </ul>
+          <div
+            class="testimonials__control-group flex justify-space-between align-item-center"
+          >
+            <ul class="dots flex align-item-center">
+              <li class="dot dot-active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+            <div class="control flex justify-space-between">
+              <img src="assets/images/arrow-left.svg" alt="arrow-icon" />
+              <img src="assets/images/arrow-right.svg" alt="arrow-icon" />
+            </div>
+          </div>
+        </section>
+        <section id="knowledge-base">
+            <h2 class="title">Latest Nettracking News</h2>
+            <div class="recent-post flex">
+                <img src="/assets/images/post-1.svg" alt="Recent post image">
+                <a class="recent-post-info">
+                    <time><span>August 24-2022</span></time>
+                    <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                    <p class="post-detail">Tips memilih foto yang cocok untuk desain website dan bagaimana 
+                        cara mene mpatkan nya dengan tepat Beberapa cara yang saya lakukan ketika tidak
+                        memiliki ide atau bingung untuk memulai
+                        design
                     </p>
-                    <ul class="socials flex">
-                        <li><a class="" href="#"><i class='bx bxl-facebook-square'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
-                    </ul>
+                </a>
+            </div>
+            <ul class="post-list flex">
+                <li class="post">
+                    <a href="#">
+                        <img src="/assets/images/post-2.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
                 </li>
-                <li class="footer__col social__col">
-                    <span class="col__header">Product</span>
-                    <ul class="footer_links">
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Fearures</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                    </ul>
+                <li class="post">
+                    <a href="#">
+                        <img src="assets/images/post-3.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
                 </li>
-                <li class="footer__col social__col">
-                    <span class="col__header">Service</span>
-                    <ul class="footer_links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Road Map</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Good Tear</a></li>
-                    </ul>
+                <li class="post">
+                    <a href="#">
+                        <img src="assets/images/post-4.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
                 </li>
-                <li class="footer__col social__col">
-                    <span class="col__header">Solutions</span>
-                    <ul class="footer_links">
-                        <li><a href="#">Process Management</a></li>
-                        <li><a href="#">Request Management</a></li>
-                        <li><a href="#">Workflow Management</a></li>
-                        <li><a href="#">Finance</a></li>
-                    </ul>
+                <li class="post">
+                    <a href="#">
+                        <img src="assets/images/post-5.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="#">
+                        <img src="assets/images/post-6.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="#">
+                        <img src="assets/images/post-7.svg" alt="Post image">
+                        <div class="post-info">
+                            <h3 class="post-title">Memilih foto yang cocok untuk desain website</h3>
+                            <p class="post-detail">
+                                Tips memilih foto yang cocok untuk desain website
+                                    dan bagaiman cara mene mpatkan nya dengan tepat
+                            </p>
+                        </div>
+                    </a>
                 </li>
             </ul>
-        </footer>
+            <button type="button" class="btn btn__load">Load more</button>
+        </section>
+        <section id="frequently-asked-question">
+          <h2 class="title">FAQ</h2>
+          <h3 class="intro">
+            Measure marketing and PR effectiveness. Find out which
+          </h3>
+          <ul class="faq__list">
+            <li class="question flex">
+              <span class="question__number">01</span>
+              <div class="question__info">
+                <h3 class="question__title">What is nettracking</h3>
+                <p class="question__answer">
+                  "NetTracking" is a very powerful Web 2.0 site search engine
+                  allows you to find
+                </p>
+              </div>
+            </li>
+            <li class="question flex">
+              <span class="question__number">02</span>
+              <div class="question__info">
+                <h3 class="question__title">Pacage tracking available?</h3>
+                <p class="question__answer">
+                  Nettracking is designed with an integrated tracking system
+                  that allows customers<br />
+                  to track their package
+                </p>
+              </div>
+            </li>
+            <li class="question flex">
+              <span class="question__number">03</span>
+              <div class="question__info">
+                <h3 class="question__title">
+                  What is the best solution in this platform
+                </h3>
+                <p class="question__answer">
+                  Nettracking is a content marketing solution that tracks the
+                  effectiveness of your blog,<br />
+                  social network,
+                </p>
+              </div>
+            </li>
+            <li class="question flex">
+              <span class="question__number">04</span>
+              <div class="question__info">
+                <h3 class="question__title">Marketing friendly?</h3>
+                <p class="question__answer">
+                  video and email marketing efforts. By converting your
+                  customers into tracking
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="cta">
+            <h3>Ready to get stared?</h3>
+            <p>Sign up to get API keys or request us for a demo</p>
+            <div class="cta-btn">
+                <div class="cta-btn__background">
+                    <a href="#">Sign up</a>
+                </div>
+
+                <div class="cta-btn__background">
+                    <a href="#">See Pricing</a>
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul class="footer__cols flex">
+          <li class="footer__col social__col">
+            <a href="#" class="footer__logo">Nettracking</a>
+            <p>
+              We saw our customers<br />
+              confusing us with some of the<br />
+              other companies intheindustry
+            </p>
+            <ul class="socials flex">
+              <li>
+                <a class="" href="#"><i class="bx bxl-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__col">
+            <span class="col__header">Product</span>
+            <ul class="footer_links">
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Fearures</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+          </li>
+          <li class="footer__col">
+            <span class="col__header">Service</span>
+            <ul class="footer_links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Road Map</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Good Tear</a></li>
+            </ul>
+          </li>
+          <li class="footer__col">
+            <span class="col__header">Solutions</span>
+            <ul class="footer_links">
+              <li><a href="#">Process Management</a></li>
+              <li><a href="#">Request Management</a></li>
+              <li><a href="#">Workflow Management</a></li>
+              <li><a href="#">Finance</a></li>
+            </ul>
+          </li>
+        </ul>
+      </footer>
     </div>
     <p class="copyright">© Copyright 2021 by UIHUT. All right reserved.</p>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>

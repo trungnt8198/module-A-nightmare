@@ -1,0 +1,96 @@
+#knowledge-base {
+    margin-top: 8rem;
+}
+
+.recent-post {
+    margin-top: 5rem;
+    background-color: $gray;
+    border-radius: 1.2rem;
+}
+
+.recent-post .recent-post-info {
+    margin-right: 5rem;
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.recent-post-info time{
+    color: #696B76;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.recent-post .post-title {
+    margin-top: 3rem;
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    letter-spacing: -0.03rem;
+    text-transform: capitalize;
+}
+
+.recent-post .post-detail {
+    margin-top: 3rem;
+    color: #696B76;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.post-list {
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    text-align: left;
+}
+
+.post {
+    background-color: $gray;
+    border-radius: 1.2rem;
+}
+
+.post img{
+    max-width: 37rem;
+    width: 100%;
+}
+
+.post .post-info {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    max-width: 33rem;
+    width: 100%;
+}
+
+.post .post-info .post-title {
+    color: #CACACA;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.036rem;
+}
+
+.post .post-info .post-detail {
+    margin-top: 2rem;
+    width: 32.4rem;
+    color: #696B76;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.btn__load {
+    margin-top: 5rem;
+    background: #FF7661;
+    width: 15.7rem;
+    height: 4.8rem;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.015rem;
+}

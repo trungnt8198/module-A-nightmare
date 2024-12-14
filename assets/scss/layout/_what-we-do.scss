@@ -14,13 +14,14 @@
 }
 
 .what-we-do__cards {
+    flex-wrap: wrap;
     margin-top: 8.4rem;
 }
 
 .what-we-do__cards > .card__left {
     padding-left: 5rem;
     background-color: $gray;
-    width: 57.5rem;
+    flex: 1 1;
     text-align: left;
     border-radius: 2rem;
 }
@@ -68,4 +69,8 @@
 
 .card__left > .btn-with-arrow {
     margin-top: 4rem;
+}
+
+.card__right {
+    flex: 1 1;
 }

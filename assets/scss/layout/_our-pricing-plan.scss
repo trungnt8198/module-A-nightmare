@@ -113,3 +113,15 @@
         background-color: $premium;
     }
 }
+
+.trusted-companies__title {
+    margin-top: 8rem;
+}
+
+.trusted-companies {
+    margin-top: 6rem;
+    padding: 2rem 3.5rem;
+    background-color: $gray;
+    border-radius: 1.2rem;
+    flex-wrap: wrap;
+}

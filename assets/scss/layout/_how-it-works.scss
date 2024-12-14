@@ -7,6 +7,7 @@
     padding: 7rem 16rem;
     background-color: $gray;
     border-radius: 2rem;
+    position: relative;
 }
 
 .step {
@@ -14,7 +15,7 @@
     text-align: left;
 }
 
-.step:nth-child(even) {
+.step:nth-child(odd) {
     margin-top: 4.8rem;
     flex-direction: row-reverse;
     text-align: right;
@@ -31,10 +32,6 @@
     border-radius: 1.2rem;
 }
 
-.step-info {
-    position: relative;;
-}
-
 .step-info > .title {
     margin-top: 2.5rem;
     font-size: 2.4rem;
@@ -48,7 +45,20 @@
     line-height: 2.4rem;
 }
 
-.step-info > .step__number {
+.step:nth-child(even) .title {
+    top: 2.8rem;
+}
+
+.step__numbers {
+    height: 51.2rem;
+    width: 6rem;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 2.8rem);
+}
+
+.step__number {
     line-height: 6rem;
     text-align: center;
     display: block;
@@ -61,36 +71,71 @@
     color: #FFF;
     font-size: 2rem;
     font-weight: 500;
-    position: absolute;
-    right: calc(100% + 6rem);
-    top: 2.5rem
 }
 
-.step:nth-child(even) .title {
-    top: 2.8rem;
+.step__number:not(:first-child) {
+    margin-top: 16.6rem;
 }
 
-.step:nth-child(even) .step__number {
-    top: 2.8rem;
-    left: calc(100% + 6rem);
+.step__number:nth-child(even) {
+    position: relative;
 }
 
-.step:nth-child(even) .step__number::before,
-.step:nth-child(even) .step__number::after {
+.step__number:nth-child(even)::before,
+.step__number:nth-child(even)::after {
     content: "";
     display: block;
     height: 16.6rem;
     border-left: 0.2rem dashed #3E4047;
     position: absolute;
     left: 50%;
+    transform: translate(-50%);
 }
 
-.step:nth-child(even) .step__number::before {
+.step__number:nth-child(even)::before {
     bottom: 100%;
 }
 
-.step:nth-child(even) .step__number::after {
+.step__number:nth-child(even)::after {
     top: 100%;
 }
 
+.growing-business__title {
+    margin-top: 5rem;
+}
 
+.growing-business__title ~ .intro {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.guides-list {
+    margin-top: 7.4rem;
+    width: 114rem;
+    gap: 3rem;
+    display: flex;
+}
+
+.guides-list .guide__image-container {
+    width: 35.1rem;
+    height: 16.8rem;
+    background-color:  #272932;;
+    border-radius: 1.2rem 1.2rem 0 0;
+    position: relative;
+}
+
+.guides-list .guide__image-container > img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guides-list > li > a > p {
+    color: #696B76;
+    font-size: 1.6rem;
+    padding: 3rem;
+    background-color: $gray;
+    border-radius: 0 0 1.2rem 1.2rem;
+}

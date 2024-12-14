@@ -1,6 +1,17 @@
+header {
+    background-color: $dark;
+    padding: 0 13.5rem;
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+    font-family: $primaryFont;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
 .header__inner {
     height: 8rem;
-    max-width: 100%;
 }
 
 .logo-group__logo {
@@ -83,4 +94,44 @@
     background-color: #1D1F29;
     color: #FFF;
     margin-right: 1.8rem;
+}
+
+.header__inner {
+    position: relative;
+}
+
+.nav__toggle {
+    display: none;
+}
+
+.mobile-nav {
+    background-color: $gray;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    padding: 1rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+    display: none;
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in; 
+}
+
+.mobile-nav .nav__link {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.nav__toggle__checkbox {
+    display: none;
+}
+
+.nav__toggle__checkbox:checked ~ .mobile-nav {
+    display: block;
+    transform: unset;
+}
+
+.mobile-nav .btn {
+    margin-right: 1rem;
+    color: #FFF;
+    background-color: #12141D;;
 }
